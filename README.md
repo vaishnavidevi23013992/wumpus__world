@@ -1,6 +1,6 @@
 <h1>ExpNo 9: Solve Wumpus World Problem using Python demonstrating Inferences from Propositional Logic</h1> 
-<h3>Name:                       </h3>
-<h3>Register Number/Staff Id:                </h3>
+<h3>Name: VAISHNAVIDEVI V </h3>
+<h3>Register Number: 212223040230 </h3>
 <H3>Aim:</H3>
 <p>
     To solve  Wumpus World Problem using Python demonstrating Inferences from Propositional Logic
@@ -23,9 +23,35 @@ It is assumed that there will always be a safe path that the agent can take to e
 </p>
 
 <hr>
-<h1>Sample Input and Output:</h1>
-<hr>
 
-![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/8696111a-a4a7-47cb-ba4b-43a4ef88573f)
-![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/4be5bf06-79fa-4fa0-9334-38a33f06060b)
+<h1>Program : </h2>
 
+<pre><code>
+wumpus=[["Save","Breeze","PIT","Breeze"],
+        ["Smell","Save","Breeze","Save"],
+        ["WUMPUS","GOLD","PIT","Breeze"],
+        ["Smell","Save","Breeze","PIT"]]
+
+row = 0
+column = 0
+arrow = True
+player = True
+score = 0
+
+while(player):
+    choice=input("press u to move up\npress d to move down\npress l to move left\npress r to move right\n")
+    if choice == "u":
+        if row != 0:
+            row-=1
+        else:
+            print("move denied")
+
+        print("current location: ",wumpus[row][column],"\n")
+    elif choice == "d" :
+        if row!=3:
+            row+=1
+        else:
+            print("move denied")
+
+        print("current location: ",wumpus[row][column],"\n")
+Therefore, Wumpus World Problem using Python demonstrating Inferences from Propositional Logic solved successfully.
